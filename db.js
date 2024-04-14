@@ -3,7 +3,7 @@ require("dotenv").config();
 
 // Define the mongoDB connection url
 const mongoURL =
-  "mongodb+srv://abhishewale100:4IMidbybrAxCibdK@cluster0.ipvsl13.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/hotels";
+  "mongodb+srv://abhishewale100:dq0RU1PKshJCmXyd@cluster0.roxrsu6.mongodb.net/hotels?retryWrites=true&w=majority&appName=Cluster0";
 
 // Setup mongodb connection
 mongoose.connect(mongoURL, {
@@ -29,3 +29,5 @@ db.on("disconnected", () => {
 
 // Export the database connection
 module.exports = db;
+
+// dq0RU1PKshJCmXyd

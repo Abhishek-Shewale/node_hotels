@@ -6,13 +6,10 @@ const mongoURL =
   "mongodb+srv://abhishewale100:4IMidbybrAxCibdK@cluster0.ipvsl13.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/hotels";
 
 // Setup mongodb connection
-mongoose.connect(
-  mongoURL
-  //    {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  // }
-);
+mongoose.connect(mongoURL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // Get the default connection
 const db = mongoose.connection;

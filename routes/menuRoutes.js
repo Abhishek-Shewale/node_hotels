@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express();
+const router = express.Router(); // Use express.Router() instead of express()
 const Menu = require("../models/Menu");
 
 // Post method for

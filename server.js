@@ -29,7 +29,7 @@ const personRoutes = require("./routes/personRoutes");
 const menuRoutes = require("./routes/menuRoutes");
 
 // Use the routers
-app.use("/person", localAuthMiddleWare, personRoutes);
+app.use("/person", personRoutes);
 app.use("/menu", menuRoutes);
 
 // Error handling middleware
